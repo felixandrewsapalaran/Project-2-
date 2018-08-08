@@ -9,51 +9,30 @@ General
 }
 
 body {
-
-	text-align: center;
-	/*top and bottom margin is auto, 0 for left and right*/
-	margin: auto 0;
-	display: block;
-	background-color: grey;
-	/*text color*/
-	color: #333333;
-	
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 
-
-
-/***************
-Navigation
-***************/
-
-nav li {
-
-	font-size: 15px;
-	padding: 10px;
-	padding-right: 20px;
-	text-align: center;
-	max-width: 100%;
-	background-color: red;
-	padding-top: 10px;
-	margin: 10px;
-
-
+#wrapper2 {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
 }
 
-nav a {
+#logo {
+	text-align: center;
+	align-content: flex-start;
+	text-shadow: 5px 5px 5px grey;
+    font-size: medium;
+}
+
+a {
 	text-decoration: none;
-	color: black;
-	background-color: white;
-	padding: 30px;
-	max-width: 100%;
-	margin: 10px;
 }
 
-
-
-
+img {
+	max-width: 100%;
+}
 
 
 
@@ -64,10 +43,80 @@ Header
 ***************/
 
 
-#Intro {
+
+h1,
+ {
+	font-family: 'Cormorant Garamond', serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8;
+}
+
+h2{
+	font-family: 'Cormorant Garamond', serif;
 	text-align: center;
-	font-size: small;
-	text-shadow: 5px 5px 5px grey;
+	font-weight: normal;
+	margin: 15px 0;
+}
+
+h3,
+p{
+	font-size: 1em;
+	margin: 5px 0 0;
+	font-weight: 400;
+}
+
+
+
+
+
+/***************
+Navigation
+***************/
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 10px 0;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0 10px;
+
+}
+
+/*nav li {
+	display:block;
+	background-color: red;
+}
+*/
+
+nav li{
+list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px;
+  padding-right: 20px;
+  text-align:center;
+
+}
+
+/*nav a {
+	font-weight: 800;
+	background-color: #fff;
+
+	padding: 15px 10px;
+}*/
+
+nav a{
+text-decoration: none;
+  color: black;
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  max-width: 100%;
+  color: #4A4A4A;
 }
 
 
@@ -78,39 +127,43 @@ Header
 Portfolio
 ***************/
 
-.heading p {
-	font-size: 15px;
-	margin: 10px;
-}
 
-.heading img{
-	/*overflow: hidden;*/
-	max-width: 80%;
-}
-
-.heading {
-	margin: 30px;
-}
-
-
-.wrapper {
-	background-color: white;
-}
-
-.wrapper p{
-	padding: 20px;
-}
-
-.wrapper img {
-	max-width: 90%;
-}
-
-.wrapper li {
+#gallery {
 	list-style: none;
+	max-width: 100%;
+	/*box-shadow: 10px 10px 5px grey;*/
 }
 
-#Pro-title {
-	background-color: #fff;
+
+#gallery li {
+	margin:3.5%;
+	background-color:  #737373;
+  	box-shadow: 10px 5px 10px grey;
+}
+
+
+#gallery  li  p{
+	padding: 5%;
+	font-size: 1em;
+	color: #404040;
+	box-shadow: 5px 5px 5px  grey;
+}
+
+
+/***************
+Colors
+***************/
+
+body{
+	color: #404040;
+}
+
+header{
+	background-color: #D0D3D4;
+}
+
+nav {
+	background-color: #737373;
 }
 
 
@@ -162,13 +215,11 @@ Media Queries Mobiles
 
 @media (min-width: 320px){
 
-	nav a {
-		background-color: green;
-		
-		/*max-width: 100%;*/
+	#gallery li {
+		width: 90%;
 	}
 
-footer {
+	footer {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
@@ -192,36 +243,23 @@ footer {
 Media Queries Tables
 *********************/
 @media (min-width: 768px){
-
-	nav a,
-	.intro,
-	.heading,
-	.wrapper,
-	footer{
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: center;
+	#Left {
+		float: left;
+		width: 50%;
 	}
 
-footer {
-	/*display: flex;*/
+	#Right {
+		float: right;
+		width: 50%;
+	} 
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 	
 }
-
-.primary  {
-	
-	width: 50%;
-	float: left;
-}
-.secondary {
-
-	width: 50%;
-	float: right;
-}
-
-
-
-
 
 
 /*********************
@@ -229,6 +267,7 @@ Media Queries Desktop
 *********************/
 
 @media (min-width: 1024px) {
+
 
 }
 
