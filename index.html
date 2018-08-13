@@ -21,22 +21,26 @@ Main Profile Page
 
 	</head>
 
+	
 	<body>
-		
-		<header>
+
+		<header class = "main-header">
 			
-			<div id ="logo">
+			<div id = "main-header">
 				
-				<h1>Felix Andrew Sapalaran</h1>
-				<h3>Front End Web Developer</h3>
-				<p>01000011 01010011</p>
+				<h3 class = "name"><a>Felix Andrew Sapalaran</a></h3>
+				
+				
 			</div>
+
+
+
 			
 				<nav>
 					
-					<ul >
+					<ul class = "main-nav">
 						
-						<li><a href = "#home"> Home</a></li>
+						<li><a href = "#main-header"> Home</a></li>
 
 						<li><a href = "#portfolio">Portfolio</a></li>
 
@@ -45,107 +49,119 @@ Main Profile Page
 					</ul>
 
 				</nav>
+		</header>
 
-			<div class = 'wrapper1'>
+
+
+			<div class = "profile">
 				
-				<img src = "images/responsive-layout-profile.png" alt = "profile image">
+				<img class = "profile-photo" src = "images/responsive-layout-profile.png" alt = "profile image">
 
-				<p>Hello! My name is Felix Andrew and I'm a Front End Web Developer. I am currently a student at Treehouse learning and improving my Web design skills. I love learning new and better ways to create seamless user experiences with clean, effecient, and scalable code. I consider an ongoing education, and I'm always looking for opportunities to work
+				<p class = "introduction">Hello! My name is Felix Andrew and I'm a Front End Web Developer. I am currently a student at Treehouse learning and improving my Web design skills. I love learning new and better ways to create seamless user experiences with clean, effecient, and scalable code. I consider an ongoing education, and I'm always looking for opportunities to work
 				with those who are willing to share their knowledge as much as I want to learn. My primary goal is to create something beautiful with people
 				that bring out the best in me. </p>
 
 			</div>
 
-		</header>
+		
 
 
-		<div class = 'wrapper2'>
+		<!--Added clearfix  -->
+		<div class = "clearfix">
 
-			<div>
+			<div id = "portfolio">
+
+				<div class = 'portfolio'>
 				
-				<h2>Portfolio</h2>
+					<h3 class = "portfolio-title"><a>Portfolio<a></h3>
 
-				<ul id = "gallery">
-					
-					<li id = 'Left'>
+					<ul class = "projects">
 						
-						<img src = "images/portfolio-1.png" alt = "Portfolio" >
+						<li>
+							
+							<img src = "images/portfolio-1.png" alt = "Portfolio" >
 
-						<h2>Marketing Page</h2>
+							<h2>Marketing Page</h2>
 
-						<p>This project shows the front page of a marketing website 
-						meant for a specific business I'm interested in.</p>
+							<p>This project shows the front page of a marketing website 
+							meant for a specific business I'm interested in.</p>
 
-					</li>
+						</li>
 
-					<li id = 'Right'>
-						
-						<img src = "images/portfolio-2.png" alt = "Marketing Page" >
+						<li>
+							
+							<img src = "images/portfolio-2.png" alt = "Marketing Page" >
 
-						<h2>Search Page</h2>
+							<h2>Search Page</h2>
 
-						<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+							<p>This project searches through a specific database to find information that the user is trying to look up.</p>
 
-					</li>
+						</li>
 
-					<li id = 'Left'>
-						
-						<img src = "images/portfolio-3.png" alt = "Search Page" >
+						<li>
+							
+							<img src = "images/portfolio-3.png" alt = "Search Page" >
 
-						<h2>Travel App</h2>
+							<h2>Travel App</h2>
 
-						<p>This project compares travel times based on different transportaion methods and tells you the best one.</p>
+							<p>This project compares travel times based on different transportaion methods and tells you the best one.</p>
 
-					</li>
+						</li>
 
-					<li id = 'Right'>
-						
+						<li>
+							
 
-						<img src = "images/portfolio-4.png" alt = "Travel App" >
+							<img src = "images/portfolio-4.png" alt = "Travel App" >
 
-						<h2>Map of Favorite Spots</h2>
+							<h2>Map of Favorite Spots</h2>
 
-						<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+							<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
 
-					</li>
+						</li>
 
-					<li id = 'Left'>
+						<li>
 
-						<img src = "images/portfolio-5.png" alt = "Photo Gallery" >
+							<img src = "images/portfolio-5.png" alt = "Photo Gallery" >
 
-						<h2>Photo Gallery</h2>
+							<h2>Photo Gallery</h2>
 
-						<p>This projects shows picture from a recent trip to the viewer and allows them to easily navigate through photos</p>
+							<p>This projects shows picture from a recent trip to the viewer and allows them to easily navigate through photos</p>
 
-					</li>
+						</li>
 
-					<li id = 'Right'>
-						
-						<img src = "images/portfolio-6.png" alt = "Calculator" >
+						<li>
+							
+							<img src = "images/portfolio-6.png" alt = "Calculator" >
 
-						<h2>Calculator</h2>
+							<h2>Calculator</h2>
 
-						<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+							<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 
-					</li>
+						</li>
 
-				</ul>
+					</ul>
 
+				</div>
+			
 			</div>
 
 		</div>
 
-		<div class = "contact-wrapper">
-			
+		
+
+
+
+		<div id = "contact">
+
 			<section>
 
-			<h2>Contact Page</h2>
+			<h2 class = "contact-title">Contact Page</h2>
 
-			<p>I'm currently looking for web development work to help me improve my skills and gain experience in the field. Contact me if you have any questions at all. </p>
+			<p class = "contact">I'm currently looking for web development work to help me improve my skills and gain experience in the field. Contact me if you have any questions at all. </p>
 
-			<p>Email:<a href=felixandrewsapalaran@gmail.com'>felixandrewsapalaran@gmail.com</a></p>
+			<p class = "email">Email: felixandrewsapalaran@gmail.com</p>
 
-			<p>Phone:<a href = 'tel:9739855214'>(973)985-5214</a></p>
+			<p class = "phone">Phone: (973)985-5214</p>
 
 		</section>
 
@@ -153,16 +169,42 @@ Main Profile Page
 
 	</body>
 
-	<footer>
-		<p class = "student-name"><a href = "#">STUDENT NAME</a></p>
-		<p><a href = "#">BACK TO TOP</a></p>
-
-		<!-- <a href="https://github.com/felixandrewsapalaran"><img src="" alt="github logo" > </a>
-
-		<a href="https://www.linkedin.com/in/felix-andrew-sapalaran-a67778144/"><img src="" alt="linkedin logo" > </a>
+	<footer id = "footer">
+		<div class = "border-line">
+		</div>
 		
-		<p>&copy;2018 Felix Andrew Sapalaran</p>
- -->
+
+		<h3 class="studentname-footer"><a>Student Name</a>
+		</h3>	
+		
+		<ul>
+			<li class="back-to-top">
+				<a href="#main-header" title="back-to-top">BACK TO TOP</a>
+			</li>
+
+
+			<li id = "foot-li">
+				<ul class="footer-nav">
+					<li>
+						<a href="#main-header">HOME</a>
+					</li>
+
+
+					<li>
+						<a href="#portfolio">PORTFOLIO</a>
+					</li>
+
+
+					<li>
+						<a href="#contact">CONTACT</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		
+
+		
+
 	</footer>
 
 

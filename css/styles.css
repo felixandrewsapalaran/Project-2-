@@ -2,70 +2,47 @@
 General
 ****************/
 
-
-/*Setting the universal box-sizing*/
 * {
 	box-sizing: border-box;
 }
 
 body {
 	font-family: 'Cormorant Garamond', serif;
+	line-height: 1.5;
+	color: #000;
+	background-color: grey;
 }
 
 
-#wrapper2 {
-	max-width: 940px;
-	margin: 0 auto;
-	padding: 0 5%;
-}
-
-#logo {
-	text-align: center;
-	align-content: flex-start;
-	text-shadow: 5px 5px 5px grey;
-    font-size: medium;
-}
-
-a {
+/*link color. Change this later*/
+a:link {
 	text-decoration: none;
+	font-size: 18px;
+
 }
 
-img {
-	max-width: 100%;
+/*unvisited link. Change this later*/
+a:link {
+	color:#000;
+}
+
+/* visited link */
+a:visited {
+	color: blue;
+}
+
+/*Selected link.Change this later */
+a:active {
+	color: pink;
 }
 
 
-
-
-
-/***************
-Header
-***************/
-
-
-
-h1,
- {
-	font-family: 'Cormorant Garamond', serif;
-	margin: 15px 0;
-	font-size: 1.75em;
-	font-weight: normal;
-	line-height: 0.8;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-h2{
-	font-family: 'Cormorant Garamond', serif;
-	text-align: center;
-	font-weight: normal;
-	margin: 15px 0;
-}
-
-h3,
-p{
-	font-size: 1em;
-	margin: 5px 0 0;
-	font-weight: 400;
-}
 
 
 
@@ -74,51 +51,36 @@ p{
 /***************
 Navigation
 ***************/
-nav {
+.name a {
+	font-size: 1.25em;
+	margin: 0;
 	text-align: center;
-	padding: 10px 0;
-	margin: 20px 10px 0;
 }
 
-nav ul{
+.main-nav li {
+	background: #fff;
+	margin: 5px;
 	list-style: none;
-	margin: 0 10px;
-
+	max-width: 90%;
 }
 
-/*nav li {
-	display:block;
-	background-color: red;
-}
-*/
-
-nav li{
-list-style-type: none;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 8px;
-  padding-right: 20px;
-  text-align:center;
-
+.name a, .main-nav {
+	display: block;
+	text-align: center;
+	padding: 10px 1px;
+	text-decoration: none;
 }
 
-/*nav a {
-	font-weight: 800;
-	background-color: #fff;
-
-	padding: 15px 10px;
-}*/
-
-nav a{
-text-decoration: none;
-  color: black;
-  display: block;
-  background-color: #fff;
-  padding: 10px;
-  max-width: 100%;
-  color: #4A4A4A;
+/*Change to your own desing*/
+.main-nav a {
+	color: #000;
+	text-transform: uppercase;
 }
 
+/*Change to your own design*/
+.main-nav a:hover {
+	color: #000;
+}
 
 
 
@@ -127,44 +89,32 @@ text-decoration: none;
 Portfolio
 ***************/
 
+h1, h2 {
+	text-align: center;
+}
 
-#gallery {
-	list-style: none;
-	max-width: 100%;
-	/*box-shadow: 10px 10px 5px grey;*/
+.introduction {
+	text-align: justify;
+	padding: 2%;
+	/*Change this to your own design*/
+	color: #000;
+}
+
+.portfolio {
+	background:#fff;
+	display: inline-block;
+}
+
+.portfolio-title {
+	text-align: center;
+}
+
+p{
+	text-align: justify;
 }
 
 
-#gallery li {
-	margin:3.5%;
-	background-color:  #737373;
-  	box-shadow: 10px 5px 10px grey;
-}
 
-
-#gallery  li  p{
-	padding: 5%;
-	font-size: 1em;
-	color: #404040;
-	box-shadow: 5px 5px 5px  grey;
-}
-
-
-/***************
-Colors
-***************/
-
-body{
-	color: #404040;
-}
-
-header{
-	background-color: #D0D3D4;
-}
-
-nav {
-	background-color: #737373;
-}
 
 
 
@@ -173,23 +123,38 @@ nav {
 Contact
 ***************/
 
+.contact {
+	text-align: justify;
+	padding: 10%;
+}
 
-.contact-wrapper {
-	padding: 20px;
+.phone {
 	text-align: center;
-	border-bottom: 1px solid #7F7F7F;
-	margin: 30px 30px;
+}
+
+.email {
+	text-align: center;
+}
+
+.profile-photo {
+	display:block;
+	max-width: 60%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 
-
-.contact-wrapper a{
-	color: #4A4A4A;
-	text-decoration: none;
-	padding-left: 20px;
-	display: none:;
-
+img {
+	max-width: 100%;
+	display: block;
+	margin-left:-20px;
 }
+
+li {
+	list-style: none;
+}
+
+
 
 
 
@@ -197,14 +162,39 @@ Contact
 Footer
 ***************/
 
-footer p a{
-	padding: 3px;
-	font-size: 15px;
-	text-decoration: none;
-	padding-top: 10px;
-	color: #4A4A4A;
-	/*display: none;*/
+.border-line {
+	height: 1px;
+	/*Change this border in your design*/
+	border-bottom: 1px solid black;
 }
+
+.studentname-footer{
+	display: inline-block;
+	float: left;
+}
+
+.back-to-top {
+	display: inline-block;
+	float: right;
+	list-style: none;
+
+}
+
+
+.footer-nav {
+	display: none;
+}
+
+
+
+/*Check if good otherwise delete*/
+#foot-li {
+
+	list-style: none;
+	display: inline;
+}
+
+
 
 
 
@@ -213,53 +203,71 @@ footer p a{
 Media Queries Mobiles
 *********************/
 
-@media (min-width: 320px){
-
-	#gallery li {
-		width: 90%;
-	}
-
-	footer {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-}
-
-.student-name {
-	padding-left: 20px;
-}
-
-
-.clearfix::after {
-    content: "";
-     display: table;
-    clear: both;
-   
-}
 
 
 
 /*********************
 Media Queries Tables
 *********************/
-@media (min-width: 768px){
-	#Left {
-		float: left;
-		width: 50%;
+
+@media (min-width: 768px) {
+	body {
+		padding-top: 5px;
 	}
 
-	#Right {
+	.main-nav {
+		text-align: center;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-right: 1%;
+		margin-left: 2%;
+		background: none;
+	}
+
+	.profile-photo {
 		float: right;
-		width: 50%;
-	} 
-
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
+		display: inline-block;
+		max-width: 35%;
+		margin-left: 10%;
+		margin-right: 6%;
 	}
-	
+
+	.introduction {
+		float: left;
+		width: 47.5%;
+	}
+
+	.projects li {
+		width: 49%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.projects {
+		margin-left: 1%;
+		margin-right: auto;
+	}
+
+	.footer-nav {
+		display: inline-block;
+		list-style-type: none;
+		float: right;
+
+	}
+
+	li {
+		display: inline;
+		padding-right: 20px;
+	}
+
+	.back-to-top {
+		display: none;
+	}
 }
+
+
 
 
 /*********************
@@ -267,8 +275,49 @@ Media Queries Desktop
 *********************/
 
 @media (min-width: 1024px) {
+	.name {
+		float: left;
+		margin: 0 1%;
+		padding: 0 2px;
+	}
 
+	.main-nav {
+		display: inline-block;
+		float: right;
+		min-width: 350px;
+	}
+
+	.profile {
+		margin-top: 100px;
+	}
+
+
+
+	/*Problem photo doesn't float right*/
+	.profile-photo {
+		float: right;
+		padding: 1em;
+	}
+
+	.introduction {
+		float: left;
+		font-size: 17px;
+		text-align: justify;
+	}
+
+	.projects li {
+		width: 33%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.products {
+		margin-left: 1%;
+		margin-right: auto;
+	}
+
+	p {
+		text-align: justify;
+	}
 
 }
-
-
